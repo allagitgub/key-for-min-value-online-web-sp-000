@@ -9,7 +9,8 @@ def key_for_min_value(name_hash)
   end
   name_hash.collect do |mykey, myvalue|
     if(smallest_value  == nil)
-      smallest_value = myvalue;
+      smallest_value = myvalue
+      puts "smallest value = " + smallest_value
     else
       if(myvalue < smallest_value)
         smallest_value  = myvalue
