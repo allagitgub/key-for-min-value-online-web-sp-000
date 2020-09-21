@@ -7,13 +7,13 @@ def key_for_min_value(name_hash)
   if(name_hash.size() == 0)
     return nil
   end
-  name_hash.collect do |key, value|
-    if(smallest_value  = nil)
-      smallest_value = value;
+  name_hash.collect do |mykey, myvalue|
+    if(smallest_value  == nil)
+      smallest_value = myvalue;
     else
-      if(value < smallest_value)
-        smallest_value  = value
-        return_key = key
+      if(myvalue < smallest_value)
+        smallest_value  = myvalue
+        return_key = mykey
       end
     end
   end
