@@ -11,12 +11,10 @@ def key_for_min_value(name_hash)
     if(smallest_value  == nil)
       smallest_value = myvalue
       return_key = mykey
-      puts "if smallest myvalue = " + smallest_value.to_s
     else
       if(myvalue < smallest_value)
         smallest_value  = myvalue
         return_key = mykey
-        #puts "smallest myvalue = " + smallest_value.to_s +" mykey "+return_key
       end
     end
   end
